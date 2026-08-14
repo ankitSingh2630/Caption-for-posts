@@ -1,5 +1,5 @@
 const express = require('express');
-const connectDB = require('./db/connection');
+const connectDB = require('./utils/connection');
 const cookieParser = require('cookie-parser'); // Import cookie-parser
 const authRoutes = require('./routes/auth');
 const postRoutes=require('./routes/posts')

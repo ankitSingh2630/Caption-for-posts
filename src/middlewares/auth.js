@@ -23,6 +23,8 @@ const userAuth = async (req, res, next) => {
   req.user = user;
 
   next();
+
+  
   } catch (error) {
     return res.status(400).json({
             success:false,

@@ -2,12 +2,18 @@ const mongoose=require('mongoose');
 
 const postSchema = new mongoose.Schema({
     image:{
-        type:String,     
+        publicId:{
+            type:String,
+        },
+        url:{
+            type:String,
+        }
     },
     caption:String,
     user:{
         type:mongoose.Schema.Types.ObjectId,
-        ref:"User"
+        ref:"User",
+        required:true,
     }
 
 },{timestamps:true})
